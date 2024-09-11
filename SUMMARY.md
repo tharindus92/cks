@@ -16,3 +16,4 @@
 * [Lab - Service Accounts](cluster-setup-and-hardening/lab-service-accounts.md)
 * [TLS Basics](cluster-setup-and-hardening/tls-basics.md)
 * [TLS in kubernetes](cluster-setup-and-hardening/tls-in-kubernetes.md)
+* [TLS in Kubernetes - Certificate Creation](cluster-setup-and-hardening/tls-in-kubernetes-certificate-creation.md)
