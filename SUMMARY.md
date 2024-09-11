@@ -14,3 +14,5 @@
 * [Article on Setting up Basic Authentication](cluster-setup-and-hardening/article-on-setting-up-basic-authentication.md)
 * [Service Account](cluster-setup-and-hardening/service-account.md)
 * [Lab - Service Accounts](cluster-setup-and-hardening/lab-service-accounts.md)
+* [TLS Basics](cluster-setup-and-hardening/tls-basics.md)
+* [TLS in kubernetes](cluster-setup-and-hardening/tls-in-kubernetes.md)
