@@ -10,4 +10,3 @@
 * [Kube-bench](cluster-setup-and-hardening/kube-bench.md)
 * [Lab - Kube-bench](cluster-setup-and-hardening/lab-kube-bench.md)
 * [Kubernetes Security Primitives](cluster-setup-and-hardening/kubernetes-security-primitives.md)
-* [AUTHENTICATION We can Also add grops](cluster-setup-and-hardening/authentication-we-can-also-add-grops.md)
