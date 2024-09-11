@@ -10,3 +10,6 @@
 * [Kube-bench](cluster-setup-and-hardening/kube-bench.md)
 * [Lab - Kube-bench](cluster-setup-and-hardening/lab-kube-bench.md)
 * [Kubernetes Security Primitives](cluster-setup-and-hardening/kubernetes-security-primitives.md)
+* [AUTHENTICATION](cluster-setup-and-hardening/authentication.md)
+* [Article on Setting up Basic Authentication](cluster-setup-and-hardening/article-on-setting-up-basic-authentication.md)
+* [Service Account](cluster-setup-and-hardening/service-account.md)
