@@ -17,3 +17,4 @@
 * [TLS Basics](cluster-setup-and-hardening/tls-basics.md)
 * [TLS in kubernetes](cluster-setup-and-hardening/tls-in-kubernetes.md)
 * [TLS in Kubernetes - Certificate Creation](cluster-setup-and-hardening/tls-in-kubernetes-certificate-creation.md)
+* [View Certificate Details](cluster-setup-and-hardening/view-certificate-details.md)
