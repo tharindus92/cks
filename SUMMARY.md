@@ -13,3 +13,4 @@
 * [AUTHENTICATION](cluster-setup-and-hardening/authentication.md)
 * [Article on Setting up Basic Authentication](cluster-setup-and-hardening/article-on-setting-up-basic-authentication.md)
 * [Service Account](cluster-setup-and-hardening/service-account.md)
+* [Lab - Service Accounts](cluster-setup-and-hardening/lab-service-accounts.md)
