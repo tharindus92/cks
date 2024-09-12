@@ -26,3 +26,5 @@
 * [Cluster role](cluster-setup-and-hardening/cluster-role.md)
 * [Kubelet Security](cluster-setup-and-hardening/kubelet-security.md)
 * [Labs - Kubelet Security](cluster-setup-and-hardening/labs-kubelet-security.md)
+* [Kubectl Proxy & Port Forward](cluster-setup-and-hardening/kubectl-proxy-and-port-forward.md)
+* [Labs - Kubectl Proxy & Port Forward](cluster-setup-and-hardening/labs-kubectl-proxy-and-port-forward.md)
