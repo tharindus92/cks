@@ -20,3 +20,5 @@
 * [View Certificate Details](cluster-setup-and-hardening/view-certificate-details.md)
 * [Certificate Workflow & API](cluster-setup-and-hardening/certificate-workflow-and-api.md)
 * [Kube config](cluster-setup-and-hardening/kube-config.md)
+* [API Groups](cluster-setup-and-hardening/api-groups.md)
+* [AUTHORIZATION](cluster-setup-and-hardening/authorization.md)
