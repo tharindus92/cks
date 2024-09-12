@@ -34,3 +34,5 @@
 * [Labs - Secure Kubernetes Dashboard](cluster-setup-and-hardening/labs-secure-kubernetes-dashboard.md)
 * [Verify platform binaries before deploying](cluster-setup-and-hardening/verify-platform-binaries-before-deploying.md)
 * [Labs - Verify platform binaries](cluster-setup-and-hardening/labs-verify-platform-binaries.md)
+* [Reference links](cluster-setup-and-hardening/reference-links-1.md)
+* [Kubernetes Software Versions](cluster-setup-and-hardening/kubernetes-software-versions.md)
