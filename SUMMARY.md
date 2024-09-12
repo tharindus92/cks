@@ -28,3 +28,4 @@
 * [Labs - Kubelet Security](cluster-setup-and-hardening/labs-kubelet-security.md)
 * [Kubectl Proxy & Port Forward](cluster-setup-and-hardening/kubectl-proxy-and-port-forward.md)
 * [Labs - Kubectl Proxy & Port Forward](cluster-setup-and-hardening/labs-kubectl-proxy-and-port-forward.md)
+* [Kubernetes Dashboard](cluster-setup-and-hardening/kubernetes-dashboard.md)
