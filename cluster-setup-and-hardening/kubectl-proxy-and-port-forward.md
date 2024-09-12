@@ -1,6 +1,6 @@
 # Kubectl Proxy & Port Forward
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 * We learned in the CKA course that we can use the Kubectl utility to interact with the Kubernetes API server. When doing so, we don't need to provide any authentication mechanism in the command line because we configured it in the Kube config file on our system.
 * We learned that the Kube config file has the necessary user details and credentials in it to access and interact with the Kubernetes cluster through the API server.&#x20;
@@ -8,12 +8,12 @@
 * The cluster could be within a VM on my laptop or on a private server in the environment, or a server on the public cloud environment, or it could be from some managed Kubernetes service provider.
 * No matter where the cluster is hosted, you can manage it locally using the Kubectl utility from your laptop as long as you have the Kube config file with the necessary security credentials.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * We also discuss that another way to interact with the Kubernetes API server is through the port 6443 using curl.
 * Say, if you were to access the API server directly through using curl as shown here, then you will not be allowed access as you have not specified any authentication mechanisms. You have to authenticate to the API server using your certificate files by passing them in the command line like this.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * An alternate option is to start a Kubectl proxy client. The Kubectl proxy client launches a proxy service locally on port 8001 by default, and uses the credentials and certificates from your Kube config file to access the cluster.
 * That way, you don't have to specify those in the curl command when you try to access the API server. Now, when you access the Kubectl proxy server is on local host at port 8001, the proxy will use the credentials from the Kube config file stored on your local computer and forward your request to the Kube API server.

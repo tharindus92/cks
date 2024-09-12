@@ -29,3 +29,6 @@
 * [Kubectl Proxy & Port Forward](cluster-setup-and-hardening/kubectl-proxy-and-port-forward.md)
 * [Labs - Kubectl Proxy & Port Forward](cluster-setup-and-hardening/labs-kubectl-proxy-and-port-forward.md)
 * [Kubernetes Dashboard](cluster-setup-and-hardening/kubernetes-dashboard.md)
+* [Securing Kubernetes Dashboard](cluster-setup-and-hardening/securing-kubernetes-dashboard.md)
+* [Reference links](cluster-setup-and-hardening/reference-links.md)
+* [Labs - Secure Kubernetes Dashboard](cluster-setup-and-hardening/labs-secure-kubernetes-dashboard.md)
