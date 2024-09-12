@@ -24,3 +24,5 @@
 * [AUTHORIZATION](cluster-setup-and-hardening/authorization.md)
 * [RBAC](cluster-setup-and-hardening/rbac.md)
 * [Cluster role](cluster-setup-and-hardening/cluster-role.md)
+* [Kubelet Security](cluster-setup-and-hardening/kubelet-security.md)
+* [Labs - Kubelet Security](cluster-setup-and-hardening/labs-kubelet-security.md)
