@@ -36,3 +36,5 @@
 * [Labs - Verify platform binaries](cluster-setup-and-hardening/labs-verify-platform-binaries.md)
 * [Reference links](cluster-setup-and-hardening/reference-links-1.md)
 * [Kubernetes Software Versions](cluster-setup-and-hardening/kubernetes-software-versions.md)
+* [Reference links](cluster-setup-and-hardening/reference-links-2.md)
+* [Cluster Upgrade Process](cluster-setup-and-hardening/cluster-upgrade-process.md)
