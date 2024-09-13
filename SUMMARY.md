@@ -52,3 +52,5 @@
 
 * [Minimize host OS footprint Intro](system-hardening/minimize-host-os-footprint-intro.md)
 * [Limit Node Access](system-hardening/limit-node-access.md)
+* [Lab - Limit Node Access](system-hardening/lab-limit-node-access.md)
+* [SSH Hardening](system-hardening/ssh-hardening.md)
