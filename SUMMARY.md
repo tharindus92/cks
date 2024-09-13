@@ -40,3 +40,5 @@
 * [Cluster Upgrade Process](cluster-setup-and-hardening/cluster-upgrade-process.md)
 * [Network Policy](cluster-setup-and-hardening/network-policy.md)
 * [Developing network policies](cluster-setup-and-hardening/developing-network-policies.md)
+* [Practice Test - Network Policies](cluster-setup-and-hardening/practice-test-network-policies.md)
+* [Ingress](cluster-setup-and-hardening/ingress.md)
