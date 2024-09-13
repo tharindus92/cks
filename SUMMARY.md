@@ -54,3 +54,6 @@
 * [Limit Node Access](system-hardening/limit-node-access.md)
 * [Lab - Limit Node Access](system-hardening/lab-limit-node-access.md)
 * [SSH Hardening](system-hardening/ssh-hardening.md)
+* [Reference links](system-hardening/reference-links.md)
+* [Privilege Escalation in Linux](system-hardening/privilege-escalation-in-linux.md)
+* [Lab - SSH Hardening and sudo](system-hardening/lab-ssh-hardening-and-sudo.md)

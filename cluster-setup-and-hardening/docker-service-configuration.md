@@ -1,6 +1,6 @@
 # Docker Service Configuration
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 * Let’s look at how to configure the Docker Daemon app service.&#x20;
 * In the previous lecture, we saw how to manage the Docker service using the systemctl service management utility.&#x20;
@@ -9,18 +9,18 @@
 * In our case, we happen to be using Linux and we happen to have the systemctl based service configuration.
 * Configuring Docker as a service helps run the Docker daemon in the background and automatically starts the service when the system boots up.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * You could also run Docker daemon directly as a foreground process using the dockerd command. This is usually done for troubleshooting and debugging purposes where if the Docker daemon is not starting up, you could run the Docker daemon this way and look at the logs and figure out what could be wrong. This prints out the daemon logs on screen.&#x20;
 * To print additional details, use the debug flag along with the command. This will now add more detailed information in the output along with the debug logs.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * When the Docker daemon starts, it listens on an internal Unix socket at the path/var/run/Docker.sock.&#x20;
 * This can be seen in the output of the logs. A Unix socket is an IPC or inter-process communication mechanism that is used for communication between different processes on the same host.&#x20;
 * This means that the Docker daemon is only accessible within the same host and the Docker CLI is configured to interact with the Docker daemon on this socket.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Now, what if we need to establish connectivity to the Docker daemon from outside of this host? Say there is another host with the Docker CLI installed on it and we want to target the Docker host to run containers.
 * Let's say the Docker host is a server somewhere hosted somewhere in your infrastructure and this host here is your laptop. You have Docker CLI installed on your laptop and from your laptop, you want to run Docker commands that can target this Docker host.
