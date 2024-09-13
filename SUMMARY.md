@@ -42,3 +42,13 @@
 * [Developing network policies](cluster-setup-and-hardening/developing-network-policies.md)
 * [Practice Test - Network Policies](cluster-setup-and-hardening/practice-test-network-policies.md)
 * [Ingress](cluster-setup-and-hardening/ingress.md)
+* [Article: Ingress](cluster-setup-and-hardening/article-ingress.md)
+* [Ingress - Annotations and rewrite-target](cluster-setup-and-hardening/ingress-annotations-and-rewrite-target.md)
+* [Docker Service Configuration](cluster-setup-and-hardening/docker-service-configuration.md)
+* [Docker - Securing the Daemon](cluster-setup-and-hardening/docker-securing-the-daemon.md)
+* [Article: Securing Control Plane Communications with Ciphers](cluster-setup-and-hardening/article-securing-control-plane-communications-with-ciphers.md)
+
+## System Hardening
+
+* [Minimize host OS footprint Intro](system-hardening/minimize-host-os-footprint-intro.md)
+* [Limit Node Access](system-hardening/limit-node-access.md)
