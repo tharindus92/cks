@@ -38,3 +38,5 @@
 * [Kubernetes Software Versions](cluster-setup-and-hardening/kubernetes-software-versions.md)
 * [Reference links](cluster-setup-and-hardening/reference-links-2.md)
 * [Cluster Upgrade Process](cluster-setup-and-hardening/cluster-upgrade-process.md)
+* [Network Policy](cluster-setup-and-hardening/network-policy.md)
+* [Developing network policies](cluster-setup-and-hardening/developing-network-policies.md)
