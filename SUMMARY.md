@@ -83,3 +83,5 @@
 * [Security Contexts](minimize-microservice-vulnerabilities/security-contexts.md)
 * [Labs - Security Contexts](minimize-microservice-vulnerabilities/labs-security-contexts.md)
 * [Admission Controllers](minimize-microservice-vulnerabilities/admission-controllers.md)
+* [Labs - Admission Controllers](minimize-microservice-vulnerabilities/labs-admission-controllers.md)
+* [Validating and Mutating Admission Controllers](minimize-microservice-vulnerabilities/validating-and-mutating-admission-controllers.md)
