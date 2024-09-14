@@ -67,3 +67,6 @@
 * [Minimize external access to the network](system-hardening/minimize-external-access-to-the-network.md)
 * [UFW Firewall Basics](system-hardening/ufw-firewall-basics.md)
 * [Lab - UFW Firewall](system-hardening/lab-ufw-firewall.md)
+* [Linux Syscalls](system-hardening/linux-syscalls.md)
+* [AquaSec Tracee](system-hardening/aquasec-tracee.md)
+* [Restrict syscalls using seccomp](system-hardening/restrict-syscalls-using-seccomp.md)
