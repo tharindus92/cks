@@ -19,24 +19,24 @@
 
 *   There are many tools available to assess our servers. One of the most commonly used tools is the CIS benchmarking tool.
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * CIS stands for the Center for Internet Security. It is a community-driven nonprofit organization whose mission is to make the connected world a safer place by developing, validating, and promoting timely best practice solutions that help people, businesses, and governments protect themselves against pervasive cyber threats.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * &#x20;The CIS website provides cybersecurity benchmarks for over 25 different vendors that include operating systems like Linux, Windows, or Mac OS, public cloud platforms like Google, Azure, AWS, and others.&#x20;
 * Mobile platforms like iOS and Android, network devices like Checkpoint, Cisco devices, Juniper, Palo Alto Networks, desktop software's like web browsers, MS Office, Zoom, and server software like different web servers, like Tomcat and Nginx, and other popular databases, as well as those that fall into the virtualization category, such as VMware, Docker, and Kubernetes. You may register at the CIS website and download CIS benchmarks for the necessary components of your choice.
 * Now, within these benchmarks are pages of instructions of various security recommendations, with each recommendation detailing why it is a threat, how to check if the threat exists on your system, which includes the commands that you must run as well, and how to remediate the same. Again, that includes the commands to remediate that problem as well.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now, not only does CIS publish best practices, they also provide necessary tools that can help run assessments and remediate them as well. The CIS-CAT tools help in the automated assessment of the server. It compares the current configuration on the server against the recommended security best practices in the benchmark document and reports issues if any are found.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Once run, it generates a report in an HTML format summarizing the list of recommendations outlined in the best practices and a status indicating if these have been implemented on the system.
 * &#x20;In this screenshot from the results page of a test run, shows the tests that passed or failed for each category of tests and associated score as well. A detailed breakdown of each test and corresponding results can also be seen when you click each of these groups.

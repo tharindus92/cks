@@ -1,41 +1,41 @@
 # TLS Basics
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Without secure connectivity,if a user were to access his online banking application,the credentials he types in would be sent in a plain text format. The hacker sniffing network traffic could easily retrieve the credentials and use it to hack into the user's bank account.
 * Well, that's obviously not safe, so you must encrypt the data being transferred using encryption keys.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 * The data is encrypted using a key,which is basically a set of random numbers and alphabets. You add the random number to your data and you encrypt it into a format that cannot be recognized. The data is then sent to the server. The hacker sniffing the network gets the data, but can't do anything with it.
 * However, the same is the case with the server receiving the data. It cannot decrypt the data without the key, so a copy of the key must also be sent to the server so that the server can decrypt and read the message.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Since the key is also sent over the same network, the attacker can sniff that as well and decrypt the data with it.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This is known as symmetric encryption.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It is a secure way of encryption, but since it uses the same key to encrypt and decrypt the data, and since the key has to be exchanged between the and the receiver, there is a risk of a hacker gaining access to the key and decrypting the data,and that's where asymmetric encryption comes in.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Instead of using a single key to encrypt and decrypt data, asymmetric encryption uses a pair of keys, a private key and a public key.&#x20;
 * Well, they are private and public keys, but for the t ake of this example, we will call it a private key and a public lock.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * A key, which is only with me, so it's private, a lock that anyone can access, so it's public.
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The trick here is, if you encrypt or lock the data with your lock, you can only open it with the associated key.
 * &#x20;So your key must always be secure with you and not be shared with anyone else, it's private.
@@ -44,40 +44,40 @@ It is a secure way of encryption, but since it uses the same key to encrypt and 
     No matter what is locked using the public lock, it can only be unlocked by your private key.
 * Before we go back to our web server example, let's look at an even simpler use case of securing SSH access to servers using key pairs.
 
-<figure><img src="../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * You have a server in your environment that you need access to. You don't want to use passwords as they're too risky. so you decide to use key pairs.&#x20;
 * You generate a public and private key pair. You can do this by running the SSH keys and command. It creates two files, ID\_RSA is the private key and ID\_RSA.pub is the public key.
 
-<figure><img src="../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Well, not a public key, a public lock. You then secure your server by locking down all access to it, except through a door that is locked using your public lock.&#x20;
 * It's usually done by adding an entry with your public key into the server's SSH authorized\_keys file.
 * So you see the lock is public and anyone can attempt to break through.
 * &#x20;But as long as no one gets their hands on your private key, which is safe with you on your laptop, no one can gain access to the server.
 
-<figure><img src="../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * When you try to SSH, you specify the location of your private key in your SSH command.
 * What if you have other servers in your environment? How do you secure more than one server with your key pair?&#x20;
 * Well, you can create copies of your public lock and place them on as many servers as you want.&#x20;
 * You can use the same private key to SSH into all of your servers securely.
 
-<figure><img src="../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 What if other users need access to your servers? Well, they can do the same thing. They can generate their own public and private key pairs. As the only person who has access to those servers, you can create an additional door for them and lock it with their public locks, copy their public locks to all the servers, and now other users can access the servers using their private keys. Let's go back to our web server example.
 
-<figure><img src="../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * You see, the problem we had earlier with symmetric encryption was that the key used to encrypt data had to be sent to the server over the network along with the encrypted data, and so there is a risk of the hacker getting the key to decrypt the data.
 * What if we could somehow get the key to the server safely? Once the key is safely made available to the server, the server and client can safely continue communication with each other using symmetric encryption.
 
-<figure><img src="../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * To securely transfer the symmetric key from the client to the server, we use asymmetric encryption. So we generate a public and private key pair on the server. We're going to refer to the public lock as public key going forward now that you have got the idea.
 * The SSH key gen command was used earlier to create a pair of keys for SSH purposes, so the format is a bit different. Here we use the open SSL command to generate a private and public key pair,and that's how they look.
 
-<figure><img src="../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * When the user first accesses the web server using HTTPS, he gets the public key from the server. Since the hacker is sniffing all traffic, let us assume he too gets a copy of the public key.
 * We'll see what he can do with it. The user, in fact, the user's browser then encrypts the symmetric key using the public key provided by the server. The symmetric key is now secure. The user then sends this to the server.

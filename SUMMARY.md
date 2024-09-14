@@ -63,3 +63,7 @@
 * [Disable Open Ports](system-hardening/disable-open-ports.md)
 * [Reference links](system-hardening/reference-links-2.md)
 * [Lab - Identify open ports, remove packages services](system-hardening/lab-identify-open-ports-remove-packages-services.md)
+* [Minimize IAM roles](system-hardening/minimize-iam-roles.md)
+* [Minimize external access to the network](system-hardening/minimize-external-access-to-the-network.md)
+* [UFW Firewall Basics](system-hardening/ufw-firewall-basics.md)
+* [Lab - UFW Firewall](system-hardening/lab-ufw-firewall.md)
