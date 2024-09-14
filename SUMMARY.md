@@ -62,4 +62,4 @@
 * [Restrict Kernel Modules](system-hardening/restrict-kernel-modules.md)
 * [Disable Open Ports](system-hardening/disable-open-ports.md)
 * [Reference links](system-hardening/reference-links-2.md)
-* [Page 1](system-hardening/page-1.md)
+* [Lab - Identify open ports, remove packages services](system-hardening/lab-identify-open-ports-remove-packages-services.md)
