@@ -57,3 +57,6 @@
 * [Reference links](system-hardening/reference-links.md)
 * [Privilege Escalation in Linux](system-hardening/privilege-escalation-in-linux.md)
 * [Lab - SSH Hardening and sudo](system-hardening/lab-ssh-hardening-and-sudo.md)
+* [Remove Obsolete Packages and Services](system-hardening/remove-obsolete-packages-and-services.md)
+* [Reference links](system-hardening/reference-links-1.md)
+* [Page 1](system-hardening/page-1.md)

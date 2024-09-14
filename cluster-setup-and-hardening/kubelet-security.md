@@ -9,29 +9,29 @@ In this lecture, we will revisit Kubelet and the different approaches in configu
 * Now what if the captain receives instructions from someone else pretending to be from the mastership, to whom should the captain reveal information regarding the cargo on his ship or how many are there, what are their contents, where are they going etcetera?
 * It is important that all communications between the mastership or the Kube-apiserver and the captain on the cargo ship or the Kubelet is secure. That is what we will see in this lecture.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The Kubelet in the Kubernetes worker node registers the node with the Kubernetes cluster. When it receives instructions to load a container or a pod on the node it requests the container runtime engine which may be Docker or any other runtime engine to pull the required image and run an instance, and the Kubelet then continues to monitor the state of the pod and the containers in it and reports the status to the Kube-apiserver on a timely basis.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * That's the role of the Kubelet. We also discussed how to install the Kubelet, so we basically download the Kubelet binary and configure it to run as a service.&#x20;
 * Now just to refresh your memory, note that if you use the Kubeadm tool to deploy your cluster, we know that the Kubeadm tool automatically downloads the required binaries and bootstraps the cluster, however, it does not automatically deploy the Kubelet.&#x20;
 * You must always manually install the Kubelet on your worker notes, so that's something to note.
 * Now before we look into security, it is important to understand some basic details about the flags that are passed in while configuring the service configuration file, and also the different configuration files that are there for configuring the Kubelet. Now while configuring the Kubelet asset service, we see that it has several options configured such as the container runtime or the Kubelet-config file which is used by the Kubelet to authenticate to the Kube-apiserver, the network plugin the version as well as some additional details such as cluster domain, file check frequency cluster DNS and others.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Now this is how it was originally but with the release of version 1.10, most of these parameters were moved to another file called the Kubelet config file for ease of deployment and configuration management. The object created within the file is named Kubelet configuration.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * On the Kubelet service, we pass the path to this file as a command line argument named config.
 * Note that within the file, the parameters use a camel case, so all dashes that separate words in the previous implementation are removed and words are written without spaces, and the first letter of each word is capitalized except the first word.
 * HTTP-check-frequency becomes HTTP Check Frequency with the C and F capitalized. Now if you specify a flag both in the service configuration file or on the command line as well as in the file in the Kubelet configuration file, then the flag specified on the command line will override whatever is in this file. Just keep that in mind.
 * Now we discussed that the Kubeadm tool does not download or install the Kubelet. However, it can help in managing the Kubelet configuration. Let's say there are a large number of worker nodes and instead of manually creating these Kubelet config files in each of those worker nodes, the Kubeadm tool can help in automatically configuring the Kubelet config files on those nodes when you run the kubeadm join command.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Now once the Kubelet is configured, inspecting the Kubelet process on a node shows the different options configured including the path to the Kubelet-config file. In this case, it happens to be at /var/lib/kubelet/config.yaml.&#x20;
 * Now, inspecting that file gives us a list of parameters configured for the Kubelet. Now, the reason we discussed about all of these is to get to this point to know how to inspect the current configurations of a Kubelet and these are some parameters that were passed in with the Kubelet service and many of the flags as you can see are within this file called as the Kubelet configuration file.&#x20;

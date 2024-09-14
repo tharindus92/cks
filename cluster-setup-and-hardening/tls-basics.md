@@ -5,22 +5,22 @@
 * Without secure connectivity,if a user were to access his online banking application,the credentials he types in would be sent in a plain text format. The hacker sniffing network traffic could easily retrieve the credentials and use it to hack into the user's bank account.
 * Well, that's obviously not safe, so you must encrypt the data being transferred using encryption keys.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 * The data is encrypted using a key,which is basically a set of random numbers and alphabets. You add the random number to your data and you encrypt it into a format that cannot be recognized. The data is then sent to the server. The hacker sniffing the network gets the data, but can't do anything with it.
 * However, the same is the case with the server receiving the data. It cannot decrypt the data without the key, so a copy of the key must also be sent to the server so that the server can decrypt and read the message.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Since the key is also sent over the same network, the attacker can sniff that as well and decrypt the data with it.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This is known as symmetric encryption.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It is a secure way of encryption, but since it uses the same key to encrypt and decrypt the data, and since the key has to be exchanged between the and the receiver, there is a risk of a hacker gaining access to the key and decrypting the data,and that's where asymmetric encryption comes in.
 
