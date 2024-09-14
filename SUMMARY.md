@@ -76,4 +76,4 @@
 * [Creating AppArmor Profiles](system-hardening/creating-apparmor-profiles.md)
 * [AppArmor in Kubernetes](system-hardening/apparmor-in-kubernetes.md)
 * [Linux Capabilities](system-hardening/linux-capabilities.md)
-* [Page 1](system-hardening/page-1.md)
+* [Lab - AppArmor](system-hardening/lab-apparmor.md)
