@@ -59,4 +59,7 @@
 * [Lab - SSH Hardening and sudo](system-hardening/lab-ssh-hardening-and-sudo.md)
 * [Remove Obsolete Packages and Services](system-hardening/remove-obsolete-packages-and-services.md)
 * [Reference links](system-hardening/reference-links-1.md)
+* [Restrict Kernel Modules](system-hardening/restrict-kernel-modules.md)
+* [Disable Open Ports](system-hardening/disable-open-ports.md)
+* [Reference links](system-hardening/reference-links-2.md)
 * [Page 1](system-hardening/page-1.md)
