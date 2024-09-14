@@ -1,6 +1,6 @@
 # Kubernetes Security Primitives
 
-<figure><img src="../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -10,26 +10,26 @@
 * What are the risks and what measures do you need to take to secure the cluster. As we have seen already, the kube-api server is at the center of all operations within kubernetes. We interact with it through the kubectl utility or by accessing the API directly and through that you can perform almost any operation on the cluster. So that's the first line of defense.
 * Controlling access to the API server itself. We need to make two types of decisions who can access the cluster and what can they do.
 
-<figure><img src="../.gitbook/assets/image (25) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 * Who can access the API server is defined by the Authentication mechanisms. There are different ways that you can authenticate to the API server.&#x20;
 * Starting with user IDs and passwords stored in a static file, to tokens, certificates or even integration with external authentication providers like LDAP. Finally for machines we create service accounts.
 
-<figure><img src="../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 * Once they gain access to the cluster, What can they do is defined by authorization mechanisms. Authorization is implemented using Role Based Access Control, where users are associated to groups with specific permissions. In addition there are other authorization modules like Attribute based access control, Node Authorizers, webhooks etc.
 
-<figure><img src="../.gitbook/assets/image (27) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (27) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 * Again we look at these in more detail in the upcoming lectures. All communication with the cluster, between the various components such as the ETCD cluster, kube controller manager, scheduler, api server, as well as those running on the worker nodes such as the kubelet and and kubeproxy is secured using TLS Encryption. We have a section entirely for this where we discuss and practice how to setup the certificates between the various components.
 
-<figure><img src="../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (28) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
