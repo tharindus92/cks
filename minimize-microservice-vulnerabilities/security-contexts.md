@@ -1,6 +1,6 @@
 # Security Contexts
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Hello and welcome to this lecture on Security Contexts in Kubernetes. My name is Mumshad Mannambeth. As we saw in the previous lecture, when you run a docker container, you have the option to define a set of security standards such as the ID of the user used to run the container, the Linux capabilities that can be added or removed from the container, et cetera.
 

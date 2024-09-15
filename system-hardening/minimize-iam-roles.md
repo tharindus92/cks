@@ -6,7 +6,7 @@
 * In the previous lecture, we learned about the different accounts used in Linux. There's never a good idea to make use of the root user directly to carry out day-to-day operations.&#x20;
 * Hence we learn how to harden the SSH access, prevent root users from logging in directly to the nodes, and make use of pseudo for running commands with administrative privileges when using normal user accounts.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The root user account can be compared to the admin user in windows which has complete administrative privileges to carry out any task in the operating system.
 * &#x20;In public cloud platforms such as AWS, it is equaling to the root account that is created when we sign up. When your AWS account is just set up, this is the only account that we can use to sign in to the management console.

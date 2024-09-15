@@ -6,7 +6,7 @@
 * We have users like Administrators that access the cluster to perform administrative tasks The developers that access to cluster to test or deploy applications we have end users who access the applications deployed on the cluster and we have third party applications accessing the cluster for integration purposes.&#x20;
 * Throughout this section we will discuss how to secure our cluster by securing the communication between internal components and securing management access to the cluster through authentication and authorization mechanisms. In this lecture our focus is on securing access to the kubernetes cluster with authentication mechanisms.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * &#x20;so we talked about the different users that may be accessing the cluster.
 * &#x20;security of end users who access the applications deployed on the cluster is managed by the applications themselves internally. So we will take them out of our discussion.

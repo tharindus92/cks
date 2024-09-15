@@ -6,7 +6,7 @@
 * Let’s start by taking a quick look at how an application or a process runs in Linux. To do that, let us first have a quick look at the fundamental concepts of the Linux operating system.
 * &#x20;A kernel is the major component of an operating system, and it is the core interface between a computer’s hardware and its processes. It communicates between the two, managing resources as efficiently as possible.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

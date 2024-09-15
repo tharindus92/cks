@@ -9,7 +9,7 @@ In this lecture, we will revisit Kubelet and the different approaches in configu
 * Now what if the captain receives instructions from someone else pretending to be from the mastership, to whom should the captain reveal information regarding the cargo on his ship or how many are there, what are their contents, where are they going etcetera?
 * It is important that all communications between the mastership or the Kube-apiserver and the captain on the cargo ship or the Kubelet is secure. That is what we will see in this lecture.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The Kubelet in the Kubernetes worker node registers the node with the Kubernetes cluster. When it receives instructions to load a container or a pod on the node it requests the container runtime engine which may be Docker or any other runtime engine to pull the required image and run an instance, and the Kubelet then continues to monitor the state of the pod and the containers in it and reports the status to the Kube-apiserver on a timely basis.
 

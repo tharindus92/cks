@@ -8,7 +8,7 @@
 * In either case, software that is not needed should not be installed on the node. For one, you may never end up using it. Secondly, it also increases the complexity of the system with more moving parts that need to be maintained constantly.
 * Besides this, new vulnerabilities are discovered every day. It's equally important to make sure that existing packages are updated in a timely manner.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Next, let's look at services. Services are used to start applications when the Linux system boots. In most modern-day Linux distributions, services are managed by the systemd process.
 * The systemctl tool allows us to manage the systemd services, such as giving status, starting and stopping services, et cetera.

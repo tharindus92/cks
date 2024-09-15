@@ -18,7 +18,7 @@
 * As a result, we can eliminate the need for ever having to log in as the root user directly.
 * We can do this by setting the no login shell for the root user like this.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Let us now look at the syntax of the sudoers file. All lines that begin with a hash or a pound symbol are comments and are not applied.
 * The first field is either the user or the group to which privileges have to be granted. Groups begin with a percentage symbol.

@@ -8,7 +8,7 @@
 * The cluster could be within a VM on my laptop or on a private server in the environment, or a server on the public cloud environment, or it could be from some managed Kubernetes service provider.
 * No matter where the cluster is hosted, you can manage it locally using the Kubectl utility from your laptop as long as you have the Kube config file with the necessary security credentials.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * We also discuss that another way to interact with the Kubernetes API server is through the port 6443 using curl.
 * Say, if you were to access the API server directly through using curl as shown here, then you will not be allowed access as you have not specified any authentication mechanisms. You have to authenticate to the API server using your certificate files by passing them in the command line like this.
