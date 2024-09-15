@@ -5,7 +5,7 @@
 {% hint style="info" %}
 What is the flow of invocation of admission controllers?
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (18).png>)
 {% endhint %}
 
 

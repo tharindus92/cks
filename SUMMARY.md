@@ -91,4 +91,6 @@
 * [Understanding Pod Security Policy](minimize-microservice-vulnerabilities/understanding-pod-security-policy.md)
 * [Lab - Pod Security Admission.](minimize-microservice-vulnerabilities/lab-pod-security-admission..md)
 * [Open Policy Agent (OPA)](minimize-microservice-vulnerabilities/open-policy-agent-opa.md)
-* [Page 1](minimize-microservice-vulnerabilities/page-1.md)
+* [Labs - OPA](minimize-microservice-vulnerabilities/labs-opa.md)
+* [OPA in Kubernetes](minimize-microservice-vulnerabilities/opa-in-kubernetes.md)
+* [Labs - OPA in Kubernetes](minimize-microservice-vulnerabilities/labs-opa-in-kubernetes.md)

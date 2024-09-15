@@ -7,7 +7,7 @@ kubectl describe serviceaccount
 kubectl describe secret dashboard-sa-token-kkdm
 ```
 
-<figure><img src="../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * A service account could be an account used by an application to interact with the Kubernetes cluster.&#x20;
 * For example, a monitoring application like Prometheus uses a service account to pull the Kubernetes API for performance metrics.&#x20;
@@ -16,31 +16,31 @@ kubectl describe secret dashboard-sa-token-kkdm
 * The service account token is what must be used by the external application while authenticating to the Kubernetes API.
 * The token, however, is stored as a secret object.
 
-<figure><img src="../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * In this case, it's named dashboard-sa-token-kbbdm.&#x20;
 * So when a service account is created, it first creates the service account object, and then generates a token for the service account.&#x20;
 * It then creates a secret object and stores that token inside the secret object. The secret object is then linked to the service account. To view the token, view the secret object by running the command kubectl describe secret.
 
-<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * This token can then be used as an authentication bearer token while making a risk call to the Kubernetes API.
 * &#x20;For example, in this simple example, using Curl, you could provide the bearer token as an authorization header while making a risk call to the Kubernetes API.&#x20;
 
-<figure><img src="../.gitbook/assets/image (14) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (15) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * So that's how you create a new service account and use it.&#x20;
 * You can create a service account, assign the right permissions using role-based access control mechanisms, and export your service account tokens, and use it to configure your third party application to authenticate to the Kubernetes API.
 
-<figure><img src="../.gitbook/assets/image (16) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * But what if your third party application is hosted on the Kubernetes cluster itself? For example, we can have our custom Kubernetes dashboard application, or the Prometheus application deployed on the Kubernetes cluster itself.&#x20;
 * In that case, this whole process of exporting the service account token, and configuring the third party application to use it can be made simple by automatically mounting the service token secret as a volume inside the pod, hosting the third party application.&#x20;
 * That way, the token to access the Kubernetes API is already placed inside the pod and can be easily read by the application. You don't have to provide it manually.
 
-<figure><img src="../.gitbook/assets/image (17) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * If you go back and look at the list of service accounts, you will see that there is a default service account that exists already.
 * &#x20;For every namespace in Kubernetes, a service account named default is automatically created. Each namespace has its own default service account.&#x20;
@@ -49,7 +49,7 @@ kubectl describe secret dashboard-sa-token-kkdm
 * We haven't specified any secrets or volume mounts in the definition file. However, when the pod is created, if you look at the details of the pod by running the Kube control described pod command, you see that a volume is automatically created from the secret named default token, which is in fact the secret containing the token for this default service account.&#x20;
 * The secret token is mounted at location /var/run/secrets/kubernetes.io/serviceaccount inside the pod.
 
-<figure><img src="../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * So from inside the pod, if you run the LS command to list the contents of the directory, you will see the secret mounted as three separate files.&#x20;
 * The one with the actual token is the file's named token. If you view contents of that file, you will see the token to be used for accessing the Kubernetes API. Now remember that the default service account is very much restricted. It only has permission to run basic Kubernetes API queries.
