@@ -7,7 +7,7 @@
 * In the previous lecture, we learned that Docker blocks around 66 calls with its default profile. Well, there's a simple way to test this using an open-source container introspection tool called AMI Contained. This tool can be run as a Docker container and it provides information about the run-time used to create the container, its features, and most importantly, the syscalls that is blocked.&#x20;
 * Let us run a container using the Docker run command without any additional flags like this.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * As you can see, 64 syscalls are blocked in this case owing to the fact that Docker uses the default seccomp profile.&#x20;
 * We can also see that seccomp is running in mode two or the filtering mode. Now, let us use the same image, but this time run it as a Kubernetes pod.&#x20;

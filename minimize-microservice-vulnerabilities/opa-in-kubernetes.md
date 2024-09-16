@@ -6,11 +6,11 @@
 
 
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 * So, how do we install OPA Gatekeeper and its components? So, this is done by following the instructions available in the OPA Gatekeeper website. Well, as you can imagine, it's as simple as applying the gatekeeper specification files using a kubectl apply command.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Now, once deployed, make sure that all the gatekeeper services are installed and running as expected. As you can see in this screenshot, there's a number of controller managers, there's the audit service, there's the gatekeeper webhook service, as you can see in this output.
 

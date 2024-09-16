@@ -9,7 +9,7 @@
 * In our case, we happen to be using Linux and we happen to have the systemctl based service configuration.
 * Configuring Docker as a service helps run the Docker daemon in the background and automatically starts the service when the system boots up.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * You could also run Docker daemon directly as a foreground process using the dockerd command. This is usually done for troubleshooting and debugging purposes where if the Docker daemon is not starting up, you could run the Docker daemon this way and look at the logs and figure out what could be wrong. This prints out the daemon logs on screen.&#x20;
 * To print additional details, use the debug flag along with the command. This will now add more detailed information in the output along with the debug logs.

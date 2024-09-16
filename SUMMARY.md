@@ -94,3 +94,5 @@
 * [Labs - OPA](minimize-microservice-vulnerabilities/labs-opa.md)
 * [OPA in Kubernetes](minimize-microservice-vulnerabilities/opa-in-kubernetes.md)
 * [Labs - OPA in Kubernetes](minimize-microservice-vulnerabilities/labs-opa-in-kubernetes.md)
+* [Manage Kubernetes secrets](minimize-microservice-vulnerabilities/manage-kubernetes-secrets.md)
+* [Reference links](minimize-microservice-vulnerabilities/reference-links.md)

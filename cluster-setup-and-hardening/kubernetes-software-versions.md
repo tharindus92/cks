@@ -5,7 +5,7 @@
 * Hello and welcome to this lecture. In this lecture we will discuss about the various Kubernetes releases and versions. So what do we know about API versions in Kubernetes so far? We know that when we install a kubernetes cluster, we install a specific version of kubernetes.&#x20;
 * We can see that when we run the kubectl get nodes command. In this case its v1.11.3. In this lecture we will see how kubernetes project manages software releases. Let's take a closer look at that version number.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The kubernetes release versions consists of 3 parts. The first is the major version, followed by the minor version and then the Patch version. While minor versions are released every few months with new features and functionalities, patches are released more often with critical bug fixes. Just like many other popular applications out there, kubernetes follows a standard software release versioning procedure.&#x20;
 * Every few month It comes out with new features and functionalities through a minor release. The first major version 1.0 was released in July of 2015. As of this recording the latest stable version is 1.13.0.&#x20;

@@ -7,7 +7,7 @@
 * A common use case of this example is adding hardware support for a third party device, such as a video card, by making use of a device driver, which is provided by the kernel module.&#x20;
 * Modules can also be loaded manually into the kernel by making use of the mod probe or the insmod command.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * For example, here we are loading the module called PC speaker using the mod probe command, which should be run as the root user. To list all the modules loaded into the kernel, use the lsmod command like this.
 * However, please know that when we have Kubernetes workloads running on the source, even a unprivileged process running on a pod can cause certain network protocol related modules to be loaded into the kernel by creating a network socket. This can allow an attacker to exploit a potential vulnerability.
