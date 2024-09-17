@@ -111,3 +111,4 @@
 * [Image Security](supply-chain-security/image-security.md)
 * [Whitelist Allowed Registries - Image Policy Webhook](supply-chain-security/whitelist-allowed-registries-image-policy-webhook.md)
 * [Use static analysis of user workloads (e.g.Kubernetes resources, Docker files)](supply-chain-security/use-static-analysis-of-user-workloads-e.g.kubernetes-resources-docker-files.md)
+* [Scan images for known vulnerabilities (Trivy)](supply-chain-security/scan-images-for-known-vulnerabilities-trivy.md)
