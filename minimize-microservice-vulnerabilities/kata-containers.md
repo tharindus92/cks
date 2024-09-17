@@ -11,7 +11,7 @@
 * Just like gVisor, this gets rid of problems caused when all container apps communicate directly to the same operating systems kernel.
 * &#x20;Now, each container has its own little container to bother. If they crash it or abuse it in any way, it doesn’t bring the whole system down. Only that specific container will experience problems instead off all the containers running on the system.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Here’s the obvious question. Wouldn’t it take a significant amount of time to first create a virtual machine for every single container to be deployed? More importantly, wouldn’t there be concerns around performance?&#x20;
 * The virtual machines that are created by Kata are lightweight and are more focused on performance.

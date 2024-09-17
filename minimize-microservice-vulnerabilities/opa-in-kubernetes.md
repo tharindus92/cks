@@ -6,15 +6,15 @@
 
 
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * So, how do we install OPA Gatekeeper and its components? So, this is done by following the instructions available in the OPA Gatekeeper website. Well, as you can imagine, it's as simple as applying the gatekeeper specification files using a kubectl apply command.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Now, once deployed, make sure that all the gatekeeper services are installed and running as expected. As you can see in this screenshot, there's a number of controller managers, there's the audit service, there's the gatekeeper webhook service, as you can see in this output.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * And, so, let's first understand what the OPA Constraint Framework is, and that's how, and it's when you understand this that you can understand how the whole OPA Gatekeeper concept works. So, now, the OPA Constraint Framework is a framework that helps us implement OPA policies by declaring what is it that we want to do, where do we want to do it, and how are we going to do it? So, meaning, what requirements do I have when it comes to defining restrictions within my environment?
 * So, an example of that would be that I want all objects in a specific namespace like example to have a billing label. So, that's a very easy specific example. And next is where do I want to enforce these requirements? So, I want this to be enforced on a Kubernetes admission controller.
@@ -23,7 +23,7 @@
 * So, it's at that level that we want to apply these restrictions. So, that's kind of the target.So, it's at that level that we want to apply these restrictions. So, that's kind of the target.
 * And, lastly, we do, how do I specify what to check and what action to take? So, what I would do is whenever a pod is created or when the pod creation request comes in to the admission controller, I'd get the labels of that object and I make sure that it has the predefined billing label in it. So, that's kind of the check that I would want to do.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * So, let's start with the easy one. Let's start with how we can implement each of these, right? So, let's start with what we already know - the how part.
 * Because, now, how do we get the labels of a pod and verify that it has the right label on it? We've already learned this in the previous lectures.
@@ -34,11 +34,11 @@
 * And then we share an error message to the user saying these particular labels are missing.
 * So, that's how the rego code works.
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Next, we're going to look at how to define the Where part. So, this is as easy as specifying the target as admission for Kubernetes. So, in this case, it's always going to be admission.k8s.gatekeeper.sh.
 
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Now, with the two of these defined, we're able to define how and where. But you see the label that we have set, billing is hard coded here.&#x20;
 * So, this code only works for the use case where we check if the label on the pod is set to billing specifically.
