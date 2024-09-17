@@ -104,3 +104,7 @@
 * [One way SSL vs Mutual SSL](minimize-microservice-vulnerabilities/one-way-ssl-vs-mutual-ssl.md)
 * [Implement pod to pod encryption by use of mTLS](minimize-microservice-vulnerabilities/implement-pod-to-pod-encryption-by-use-of-mtls.md)
 * [Article - Note on Secrets](minimize-microservice-vulnerabilities/article-note-on-secrets.md)
+
+## Supply Chain Security
+
+* [Minimize base image footprint](supply-chain-security/minimize-base-image-footprint.md)
