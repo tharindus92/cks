@@ -64,6 +64,6 @@
 
 * If you were to mount the secret as a volume in the pod each attribute in the secret is created as a file with the value of the secret as its content. In this case since we have three attributes in our secret three files are created and if we look at the contents of the db password file we see the password in it.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/KodeKloud-Kubernetes-CKS-040-minimize-microservice-vulnerabilities_page-0088.jpg" alt=""><figcaption></figcaption></figure>

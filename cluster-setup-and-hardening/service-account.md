@@ -7,7 +7,7 @@ kubectl describe serviceaccount
 kubectl describe secret dashboard-sa-token-kkdm
 ```
 
-<figure><img src="../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * A service account could be an account used by an application to interact with the Kubernetes cluster.&#x20;
 * For example, a monitoring application like Prometheus uses a service account to pull the Kubernetes API for performance metrics.&#x20;
@@ -16,7 +16,7 @@ kubectl describe secret dashboard-sa-token-kkdm
 * The service account token is what must be used by the external application while authenticating to the Kubernetes API.
 * The token, however, is stored as a secret object.
 
-<figure><img src="../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * In this case, it's named dashboard-sa-token-kbbdm.&#x20;
 * So when a service account is created, it first creates the service account object, and then generates a token for the service account.&#x20;
