@@ -120,3 +120,4 @@
 * [Use Falco to Detect Threats](monitoring-logging-and-runtime-security/use-falco-to-detect-threats.md)
 * [Falco Configuration Files](monitoring-logging-and-runtime-security/falco-configuration-files.md)
 * [Reference links](monitoring-logging-and-runtime-security/reference-links.md)
+* [Mutable vs Immutable Infrastructure](monitoring-logging-and-runtime-security/mutable-vs-immutable-infrastructure.md)
